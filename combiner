@@ -97,7 +97,7 @@ class GitHubFilePusher:
 
         # Make a GET request to retrieve the file content
         response = requests.get(file_url, headers=headers)
-        print(reponse.json())
+        print(response.json())
         if response.status_code == 200:
             # Decode the content from base64
             content_base64 = response.json()["content"]
