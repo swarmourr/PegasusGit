@@ -97,11 +97,14 @@ class GitHubFilePusher:
 
         # Make a GET request to retrieve the file content
         response = requests.get(file_url, headers=headers)
-
+        print(reponse.json())
         if response.status_code == 200:
             # Decode the content from base64
             content_base64 = response.json()["content"]
             file_content = base64.b64decode(content_base64).decode("utf-8")
+            print("hada content")
+            print(file_url)
+            print(file_content)
             return file_content
         else:
             print(f"Failed to pull file '{file_path}': {response.text}")
@@ -128,6 +131,9 @@ class metadata_class:
             print("i am pulling the code")
             pusher=GitHubFilePusher(repo_owner=self.owner,token=self.token,branch_name=self.branch,local_file_path=output_file_path+"."+type,repo_name=self.repo,commit_message= f"The metadata file updated by workflow ID : {os.getenv('PEGASUS_WF_UUID')} of workflow name :  {os.getenv('PEGASUS_WF_LABEL')}")
             combined_data = yaml.safe_load(pusher.pull_file())
+            if combined_data == None:
+                print("empty metadata")
+                combined_data={}
         else:
             try:
                 # Load existing YAML data (if available)
