@@ -35,10 +35,10 @@ class FederatedLearningWorkflow():
     # --- Init ---------------------------------------------------------------------
     def __init__(self, dagfile="workflow.yml"):
         self.dagfile = dagfile
-        self.wf_dir = "/home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/" #str(Path(__file__).parent.resolve())
-        self.shared_scratch_dir = os.path.join(self.wf_dir, "scratch")
+        self.wf_dir = str(Path(__file__).parent.resolve())
+        self.shared_scratch_dir = os.path.join(self.wf_dir, "Main_workflow/scratch")
         print(self.shared_scratch_dir)
-        self.local_storage_dir = os.path.join(self.wf_dir, "output")
+        self.local_storage_dir = os.path.join(self.wf_dir, "Main_workflow/output")
         return
 
     
@@ -50,6 +50,8 @@ class FederatedLearningWorkflow():
         self.rc.write()
         self.tc.write()
         self.wf.add_replica_catalog(self.rc)
+        self.wf.add_transformation_catalog(self.tc)
+        self.wf.add_site_catalog(self.sc)
         self.wf.write(name)
         return
 
@@ -57,35 +59,27 @@ class FederatedLearningWorkflow():
     # --- Configuration (Pegasus Properties) ---------------------------------------
     def create_pegasus_properties(self):
         self.props = Properties()
-        self.props["pegasus.transfer.bypass.input.staging"]=True
         return
 
 
     # --- Site Catalog -------------------------------------------------------------
     def create_sites_catalog(self, exec_site_name="condorpool"):
         self.sc = SiteCatalog()
-
+        
         local = (Site("local")
                     .add_directories(
                         Directory(Directory.SHARED_SCRATCH, self.shared_scratch_dir)
                             .add_file_servers(FileServer("file://" + self.shared_scratch_dir, Operation.ALL)),
+                            
                         Directory(Directory.LOCAL_STORAGE, self.local_storage_dir)
                             .add_file_servers(FileServer("file://" + self.local_storage_dir, Operation.ALL))
                     )
                 )
 
         exec_site = (Site(exec_site_name)
-                        .add_directories(
-                            Directory(Directory.SHARED_SCRATCH, self.shared_scratch_dir)
-                            .add_file_servers(FileServer("scp://poseidon@federated-learning-submit" + self.shared_scratch_dir, Operation.ALL))
-                        )
-                        .add_condor_profile(universe="vanilla", request_memory="2048")
+                        .add_condor_profile(universe="vanilla")
                         .add_pegasus_profile(
-                            style="condor",
-                            memory="2048",
-                            data_configuration="nonsharedfs",
-                            SSH_PRIVATE_KEY="/home/poseidon/.ssh/cluster_key",
-                            auxillary_local=True
+                            style="condor"
                         )
                     )
 
@@ -97,12 +91,10 @@ class FederatedLearningWorkflow():
     # --- Transformation Catalog (Executables and Containers) ----------------------
     def create_transformation_catalog(self, exec_site_name="condorpool"):
         self.tc = TransformationCatalog()
-       
-        scp_wf_dir = f"scp://poseidon@federated-learning-submit/{self.wf_dir}"
-
+        
         federated_learning_container = Container("federated_learning_container",
             container_type = Container.SINGULARITY,
-             image=f"{scp_wf_dir}/../containers/fl.sif",
+            image=os.path.join(self.wf_dir, "../containers/fl.sif"),
             image_site="local"
         )
         
@@ -110,12 +102,12 @@ class FederatedLearningWorkflow():
         mkdir = Transformation("mkdir", site="local", pfn="/bin/mkdir", is_stageable=False)
         
         
-        init_model = Transformation("init_model", site=exec_site_name, pfn=f"{scp_wf_dir}../bin/init_model.py", is_stageable=True, container=federated_learning_container)
-        local_model = Transformation("local_model", site=exec_site_name, pfn=f"{scp_wf_dir}../bin/local_model.py", is_stageable=True, container=federated_learning_container)
-        global_model = Transformation("global_model", site=exec_site_name, pfn=f"{scp_wf_dir}../bin/global_model.py", is_stageable=True, container=federated_learning_container)
-        evaluate_model = Transformation("evaluate_model", site=exec_site_name, pfn=f"{scp_wf_dir}../bin/evaluate_model.py", is_stageable=True, container=federated_learning_container)
-        perf_model = Transformation("perf_model", site=exec_site_name, pfn=f"{scp_wf_dir}../bin/perf_model.py", is_stageable=True, container=federated_learning_container)
-        build_local_model = Transformation("build_local_workflow", site=exec_site_name, pfn=f"{scp_wf_dir}workflow_generator_sub.py", is_stageable=True, container=federated_learning_container)
+        init_model = Transformation("init_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/init_model.py"), is_stageable=True, container=federated_learning_container)
+        local_model = Transformation("local_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/local_model.py"), is_stageable=True, container=federated_learning_container)
+        global_model = Transformation("global_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/global_model.py"), is_stageable=True, container=federated_learning_container)
+        evaluate_model = Transformation("evaluate_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/evaluate_model.py"), is_stageable=True, container=federated_learning_container)
+        perf_model = Transformation("perf_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/perf_model.py"), is_stageable=True, container=federated_learning_container)
+        build_local_model = Transformation("build_local_workflow", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../Main_workflow/workflow_generator_sub.py.old"), is_stageable=True, container=federated_learning_container)
     
         
         self.tc.add_containers(federated_learning_container)
@@ -126,27 +118,25 @@ class FederatedLearningWorkflow():
     # --- Replica Catalog ----------------------------------------------------------
     def create_replica_catalog(self, model_path=""):
         self.rc = ReplicaCatalog()
-        scp_wf_dir = f"scp://poseidon@federated-learning-submit/{self.wf_dir}"
-
-        self.rc.add_replica("local", "train-images-idx3-ubyte", f"{scp_wf_dir}../mnist/train-images-idx3-ubyte")
-        self.rc.add_replica("local", "train-labels-idx1-ubyte", f"{scp_wf_dir}../mnist/train-labels-idx1-ubyte")
-        self.rc.add_replica("local", "t10k-images-idx3-ubyte", f"{scp_wf_dir}../mnist/t10k-images-idx3-ubyte")
-        self.rc.add_replica("local", "t10k-labels-idx1-ubyte", f"{scp_wf_dir}../mnist/t10k-labels-idx1-ubyte")
+        
+        self.rc.add_replica("local", "train-images-idx3-ubyte", "/home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-images-idx3-ubyte")
+        self.rc.add_replica("local", "train-labels-idx1-ubyte", "/home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-labels-idx1-ubyte")
+        self.rc.add_replica("local", "t10k-images-idx3-ubyte", "/home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-images-idx3-ubyte")
+        self.rc.add_replica("local", "t10k-labels-idx1-ubyte", "/home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-labels-idx1-ubyte")
         
         if model_path != "":
-            self.rc.add_replica("local", "global_model_round_init.h5", f"{scp_wf_dir}output/{model_path}")
+            self.rc.add_replica("local", "global_model_round_init.h5", os.path.join(self.wf_dir, "output", model_path))
         return
 
 
     # --- Create Workflow ----------------------------------------------------------
     def create_workflow(self, clients, selection, rounds, model_path,initiation, main_round,score):
-        self.wf = Workflow(self.wf_name, infer_dependencies=True)
+        self.wf = Workflow(self.wf_name, infer_dependencies=True,tracker_type="full")
         
         
         mnist_train_size = 60000 #these are fixed limits based on the dataset
         mnist_test_size = 10000 #these are fixed limits based on the dataset
-        min_images_per_client = 6000
-        min_images_test_per_client=2000
+        
         #for now let's give each client sequential image range --> [client*images_per_client:(client+1)*images_per_client-1]
         #for the last client let's give [client*images_per_client:mnist_training_size]
         images_per_client = mnist_train_size // clients
@@ -195,14 +185,8 @@ class FederatedLearningWorkflow():
         #step 4b: build local model(s)
         local_model_outputs = []
         for client in selected_clients:
-            #start_position = client*images_per_client
-            #end_position = (client+1)*images_per_client - 1
-            images_per_client = min_images_per_client  # Set a minimum size for each selected client
-
-            # Ensure that the range is within 0 to 60000
-            start_position = random.randint(0, mnist_train_size - images_per_client)
-            end_position = start_position + images_per_client - 1
-            print(f"local models client {client} : ({start_position}, {end_position}) size: {images_per_client}")
+            start_position = client*images_per_client
+            end_position = (client+1)*images_per_client - 1
             local_model_output = File(f"local_model_{start_position}_{end_position}_round_{main_round}.h5")
             local_model_outputs.append(local_model_output)
             locals()[local_model_base_name+str(main_round)] = (Job(f"local_model", _id=f"client_{client}_round_{main_round}", node_label=f"local_model_client_{client}_round_{main_round}")
@@ -238,16 +222,8 @@ class FederatedLearningWorkflow():
                 
         evaluate_model_outputs = []
         for client in selected_eval_clients:
-            #start_position = client*images_test_per_client
-            #end_position = (client+1)*images_test_per_client - 1
-            #start_position = client*images_per_client
-            #end_position = (client+1)*images_per_client - 1
-            images_test_per_client = min_images_test_per_client  # Set a minimum size for each selected client
-
-            # Ensure that the range is within 0 to 60000
-            start_position = random.randint(0, mnist_test_size - images_test_per_client)
-            end_position = start_position + images_test_per_client - 1
-            print(f"eval clients {selected_eval_clients}")
+            start_position = client*images_test_per_client
+            end_position = (client+1)*images_test_per_client - 1
             evaluate_model_output = File(f"global_model_evaluation_{client}_{main_round}.csv")
             evaluate_model_outputs.append(evaluate_model_output)
             evaluate_model_job = (Job("evaluate_model", _id=f"eval_client_{client}_{main_round}", node_label=f"evaluate_model_client_{client}_{main_round}")
@@ -276,9 +252,7 @@ class FederatedLearningWorkflow():
             .add_args("--sites", "condorpool",
                         "--basename", f"local_wf_round_{main_round+1}",
                         "--force",
-                        "--output-site", "local",
-                        "--cleanup","leaf",
-                        "-O",f"{self.wf_dir}output/c{clients}s{selection}r{rounds}sub")\
+                        "--output-site", "local")\
             .add_inputs(File(last_model_name), train_images, train_labels, test_images, test_labels,replicas_files)\
             #.set_stdout(Final_model_Results, stage_out=True, register_replica=True)
 
