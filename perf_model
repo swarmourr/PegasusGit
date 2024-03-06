@@ -30,7 +30,7 @@ class FederatedLearningWorkflow():
     wf_dir = None
     shared_scratch_dir = None
     local_storage_dir = None
-    wf_name = "federated-learning-example"
+    wf_name = "federated-learning-example_sub"
     
     # --- Init ---------------------------------------------------------------------
     def __init__(self, dagfile="workflow.yml"):
