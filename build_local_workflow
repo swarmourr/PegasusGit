@@ -31,10 +31,10 @@ class FederatedLearningWorkflow():
     # --- Init ---------------------------------------------------------------------
     def __init__(self, dagfile="workflow.yml"):
         self.dagfile = dagfile
-        self.wf_dir = str(Path(__file__).parent.resolve())
-        self.shared_scratch_dir = os.path.join(self.wf_dir, "Main_workflow/scratch")
+        self.wf_dir = "/home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow"
+        self.shared_scratch_dir = os.path.join(self.wf_dir, "scratch")
         print(self.shared_scratch_dir)
-        self.local_storage_dir = os.path.join(self.wf_dir, "Main_workflow/output")
+        self.local_storage_dir = os.path.join(self.wf_dir, "output")
         return
 
     
