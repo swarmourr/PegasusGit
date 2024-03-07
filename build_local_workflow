@@ -121,7 +121,7 @@ class FederatedLearningWorkflow():
         
         if model_path != "":
             self.rc.add_replica("local", "global_model_round_init.h5", os.path.join(self.wf_dir, "output", model_path))
-        self.rc.add_replica("local", "pegasus_data_config.conf","/home/poseidon/.pegasus/pegasus>
+        self.rc.add_replica("local", "pegasus_data_config.conf","/home/poseidon/.pegasus/pegasus_data_config.conf")
         return
 
 
