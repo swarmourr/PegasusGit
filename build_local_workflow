@@ -232,7 +232,7 @@ class FederatedLearningWorkflow():
 
             locals()["local_subwf_"+str(main_round+1)]  = SubWorkflow(new_sub_wf, False,_id=f"local_wf_round_{main_round+1}")\
                 .add_args("--sites", "condorpool",
-                            "--basename", f"local_wf_round_{main_round+1}",
+                            "--basename", f"workflow_round__{main_round+1}",
                             "--force",
                             "--output-site", "local")\
                 .add_inputs(File(last_model_name), train_images, train_labels, test_images, test_labels,replicas_files)\
