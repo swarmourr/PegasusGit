@@ -35,10 +35,10 @@ class FederatedLearningWorkflow():
     # --- Init ---------------------------------------------------------------------
     def __init__(self, dagfile="workflow.yml"):
         self.dagfile = dagfile
-        self.wf_dir = str(Path(__file__).parent.resolve())
-        self.shared_scratch_dir = os.path.join(self.wf_dir, "Main_workflow/scratch")
+        self.wf_dir = "/home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/" #str(Path(__file__).parent.resolve())
+        self.shared_scratch_dir = os.path.join(self.wf_dir,"scratch")
         print(self.shared_scratch_dir)
-        self.local_storage_dir = os.path.join(self.wf_dir, "Main_workflow/output")
+        self.local_storage_dir = os.path.join(self.wf_dir, "output")
         return
 
     
@@ -102,12 +102,12 @@ class FederatedLearningWorkflow():
         mkdir = Transformation("mkdir", site="local", pfn="/bin/mkdir", is_stageable=False)
         
         
-        init_model = Transformation("init_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/init_model.py"), is_stageable=True, container=federated_learning_container)
-        local_model = Transformation("local_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/local_model.py"), is_stageable=True, container=federated_learning_container)
-        global_model = Transformation("global_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/global_model.py"), is_stageable=True, container=federated_learning_container)
-        evaluate_model = Transformation("evaluate_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/evaluate_model.py"), is_stageable=True, container=federated_learning_container)
-        perf_model = Transformation("perf_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "bin/perf_model.py"), is_stageable=True, container=federated_learning_container)
-        build_local_model = Transformation("build_local_workflow", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../Main_workflow/workflow_generator_sub.py.old"), is_stageable=True, container=federated_learning_container)
+        init_model = Transformation("init_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/init_model.py"), is_stageable=True, container=federated_learning_container)
+        local_model = Transformation("local_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/local_model.py"), is_stageable=True, container=federated_learning_container)
+        global_model = Transformation("global_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/global_model.py"), is_stageable=True, container=federated_learning_container)
+        evaluate_model = Transformation("evaluate_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/evaluate_model.py"), is_stageable=True, container=federated_learning_container)
+        perf_model = Transformation("perf_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/perf_model.py"), is_stageable=True, container=federated_learning_container)
+        build_local_model = Transformation("build_local_workflow", site=exec_site_name, pfn=os.path.join(self.wf_dir, "workflow_generator_sub.py.old"), is_stageable=True, container=federated_learning_container)
     
         
         self.tc.add_containers(federated_learning_container)
@@ -270,7 +270,7 @@ class FederatedLearningWorkflow():
         
         if not skip_sites_catalog:
             print("Creating execution sites...")
-            self.create_sites_catalog(execution_site_name)
+        self.create_sites_catalog(execution_site_name)
     
         print("Creating workflow properties...")
         self.create_pegasus_properties()
