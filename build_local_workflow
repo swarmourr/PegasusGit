@@ -54,6 +54,7 @@ class FederatedLearningWorkflow():
     # --- Configuration (Pegasus Properties) ---------------------------------------
     def create_pegasus_properties(self):
         self.props = Properties()
+        self.props["pegasus.integrity.checking"]= "none"
         return
 
 
