@@ -103,7 +103,7 @@ class FederatedLearningWorkflow():
         mkdir = Transformation("mkdir", site="local", pfn="/bin/mkdir", is_stageable=False)
         
         
-        init_model = Transformation("init_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/init_model.py"), is_stageable=True, container=federated_learning_container)
+        init_model = Transformation("init_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/init_model.py"), is_stageable=True, container=federated_learning_container).add_pegasus_profile(cores=16, runtime=3600,memory='32GB')
         local_model = Transformation("local_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/local_model.py"), is_stageable=True, container=federated_learning_container).add_pegasus_profile(cores=16, runtime=14400,memory='32GB')
         global_model = Transformation("global_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/global_model.py"), is_stageable=True, container=federated_learning_container).add_pegasus_profile(cores=16, runtime=14400,memory='32GB')
         evaluate_model = Transformation("evaluate_model", site=exec_site_name, pfn=os.path.join(self.wf_dir, "../bin/evaluate_model.py"), is_stageable=True, container=federated_learning_container).add_pegasus_profile(cores=16, runtime=14400,memory='32GB')
