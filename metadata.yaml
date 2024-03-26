@@ -3184,6 +3184,2269 @@ workflow:
         timestamp: '2024-03-05 08:16:23.058665'
         type: workflow
         version: f7c2f7c96e21dbcda51ee39e1e3194ffc613d24782dbe70bc9274aa1d1b9b053
+    9ace0994-2ba7-468d-896f-a9c29f1909be:
+      CHNCXR_0001_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/train_CHNCXR_0001_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1ApibFhjri0f8g4OJXgKMi6gEt-hdvHJy
+        last_modification: 1711447316.5139248
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0001_0.png
+        size: 134606
+        timestamp: '2024-03-26 10:02:42.733716'
+        type: inputs
+        version: 3d321de9427c5fe2f2cd23539109aed4281289f5090bffd52b54864bb66c689e
+      CHNCXR_0001_0_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0001_0_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1fgXm_bknEDP2cl__tCyVPo_qiPkiqfqk
+        last_modification: 1711447316.9574156
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0001_0_0_mask.png
+        size: 8202
+        timestamp: '2024-03-26 10:04:57.964730'
+        type: outputs
+        version: fa70e37c99784a6a15e7c4e40eebe3458b76429d6d6c3b455bec482b6c11b51b
+      CHNCXR_0001_0_1_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0001_0_1_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1Of_KczD9ZkfLJfIskhgIvq8YepdHA9Bn
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0001_0_1_mask.png
+        size: 16786
+        timestamp: '2024-03-26 10:05:19.704761'
+        type: outputs
+        version: f88d4a46d77bfc99c7fab599e1449febb0da59d9fc8cf4bdaaf3272036769bd5
+      CHNCXR_0001_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/train_CHNCXR_0010_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1biwzpY3XWfreq4ccDuFrJwD6Cl2uA9gO
+        last_modification: 1711447316.521925
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0001_0_mask.png
+        size: 135480
+        timestamp: '2024-03-26 10:02:48.925615'
+        type: inputs
+        version: 591bcc7259dba8321f5dc8085d3af8a01487701b63263cc6a050eca479176a2c
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0010_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1-OFWLDHCzA5R5JVIJ1OvTrmjWbV6XRsG
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0001_0_mask.png
+        size: 3806
+        timestamp: '2024-03-26 10:14:37.787298'
+        type: inputs
+        version: 1ceae6bcbe64a5ccb9f02e73e8e361a56e68bc58d179cb8dc78e54349881114b
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0007_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1L1qVebgFcaQc06ndsl9mYo1eFqiV3pXP
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0001_0_mask.png
+        size: 5099
+        timestamp: '2024-03-26 10:21:36.596383'
+        type: inputs
+        version: 72e7ea562d286911f8734675206466754cd7b94558dcde312aea97623675a57a
+      CHNCXR_0002_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/test_CHNCXR_0002_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1ITkzou4k-WOphj0mjOSAvKaHJ0XeLj7S
+        last_modification: 1711447321.4979072
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/5769c4f4b97744b3b7d0985e0e03a533
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0002_0.png
+        size: 134048
+        timestamp: '2024-03-26 10:02:24.618286'
+        type: inputs
+        version: 0d9b197a28c1b0e92bdf591250b2a773ffac6fbc4ab458b698d3093614141bd7
+      CHNCXR_0002_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0002_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1or7XGX6zvlqRf6giEMVOfkirCbefuPuY
+        last_modification: 1711448585.0944667
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/a100a442194c47209caf7f1bfabc0ff0
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0002_0_mask.png
+        size: 4204
+        timestamp: '2024-03-26 10:23:21.588086'
+        type: inputs
+        version: 89ee415b6d56162d02338e68436b54677c4aa44d09cbc0b91ee0998eea35ea6a
+      CHNCXR_0003_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/train_CHNCXR_0003_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1jfhLlDd_ltdSrMyWvOsUDFsNMOtvjlpv
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0003_0.png
+        size: 136174
+        timestamp: '2024-03-26 10:03:32.608252'
+        type: inputs
+        version: 88bca3edd9c42e1b09878d342b0a71ff7988785e26c425721d123dade6efa9f6
+      CHNCXR_0003_0_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0003_0_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1-_tE6Mz7vpvX53SXbDh3Z03OMpdyuX4-
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0003_0_0_mask.png
+        size: 7900
+        timestamp: '2024-03-26 10:03:15.630757'
+        type: outputs
+        version: 44ad26b037d602476063fe02bf0b738703e8eb197e740103ebd42f0565ba2624
+      CHNCXR_0003_0_1_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0007_0_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1yGjzBmmK0RBCozE5OYqKMp1eY0bbJdJJ
+        last_modification: 1711447353.8135538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0003_0_1_mask.png
+        size: 36023
+        timestamp: '2024-03-26 10:04:21.652592'
+        type: outputs
+        version: c8623c0d348580782e4755d70a1e45c0658166a3142471b442fec4169e9fea60
+      CHNCXR_0003_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0003_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1kw4VA--vcdLy7DW5wr_6w12vJCCiIaTo
+        last_modification: 1711447316.5139248
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0003_0_mask.png
+        size: 4451
+        timestamp: '2024-03-26 10:03:19.261845'
+        type: inputs
+        version: 7d9002ac81e7a93d425733290222bb3529980a8123d40db48a9a1580f521db00
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0007_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1vMHVuJv7ub8t9GDAcoyyDPp50T1YMuTY
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0003_0_mask.png
+        size: 5099
+        timestamp: '2024-03-26 10:14:44.673805'
+        type: inputs
+        version: 72e7ea562d286911f8734675206466754cd7b94558dcde312aea97623675a57a
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/utils.py
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1A0kghETl8Uw0Ly0v0QbycqcTVsWk25eG
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0003_0_mask.png
+        size: 1333
+        timestamp: '2024-03-26 10:21:40.379409'
+        type: inputs
+        version: 0b0c905785810cb8f929b7eaa90a589c7ad37b5c38f42893445aa916fe01c625
+      CHNCXR_0004_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/val_CHNCXR_0004_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 117xr9sqjmvrRMX8WUFhCYYRgaKHvilGU
+        last_modification: 1711447331.6258707
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/5907cb2e451c4b25af17e24d7a357582
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0004_0.png
+        size: 136530
+        timestamp: '2024-03-26 10:02:23.480160'
+        type: inputs
+        version: 82f80a30e3e171d9c14749234ae14a722088a00dd2c874bc517e4546b45377bc
+      CHNCXR_0004_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0001_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1XTgu8mJZBVoEtdP-Yrp8oUpkGifjdIlz
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0004_0_mask.png
+        size: 4632
+        timestamp: '2024-03-26 10:14:10.211607'
+        type: inputs
+        version: ff56b9105322bec249540db0890a6bfc8a7d5e339d8c0595d05fda1d00b8e5a4
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0001_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 19fto4FPPPApim92jYlq-hTuFwCOH7lBg
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0004_0_mask.png
+        size: 4632
+        timestamp: '2024-03-26 10:21:16.189460'
+        type: inputs
+        version: ff56b9105322bec249540db0890a6bfc8a7d5e339d8c0595d05fda1d00b8e5a4
+      CHNCXR_0005_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/train_CHNCXR_0005_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1SP1s4QgkMb53haO1j5uF7hbwIKoxSmnx
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0005_0.png
+        size: 137746
+        timestamp: '2024-03-26 10:03:13.415107'
+        type: inputs
+        version: 0e8e7d2befaba37628f9a9fa47fc61799e1bf926e41b72a644ae48728cd8da34
+      CHNCXR_0005_0_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0005_0_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1ZDB8EpkZeyZX9iny4B7HYFKLBF43lFXY
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0005_0_0_mask.png
+        size: 7804
+        timestamp: '2024-03-26 10:03:24.846357'
+        type: outputs
+        version: ce5a327b14d9558762417d7f868ad48fc7c047fb07601b50c180e97b35003a20
+      CHNCXR_0005_0_1_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0005_0_1_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1JGwCgAC2gJS03r9JCVnWbZlhGhJimmTP
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0005_0_1_mask.png
+        size: 15797
+        timestamp: '2024-03-26 10:05:02.669613'
+        type: outputs
+        version: 5c9c9e4751983c8302f97b619d7ce656cb464be8d507f51eda1c23c67c471ed4
+      CHNCXR_0005_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0001_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1AR5a_JwO9sPzr0H1uVxux81o_N3DWbiQ
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0005_0_mask.png
+        size: 4632
+        timestamp: '2024-03-26 10:02:54.709149'
+        type: inputs
+        version: ff56b9105322bec249540db0890a6bfc8a7d5e339d8c0595d05fda1d00b8e5a4
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0009_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1DtWLVmbXIUTp1opzyj1iHrZiRqMWsRXy
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0005_0_mask.png
+        size: 4376
+        timestamp: '2024-03-26 10:14:24.454171'
+        type: inputs
+        version: b0e8731db76e695eee492ecbd3885cc7b552c7ad88c7cebc1b1ea196312e7a84
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0009_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1qoJLfUPljEMLCpD9gft8f5Zwiydj4wFq
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0005_0_mask.png
+        size: 4376
+        timestamp: '2024-03-26 10:21:24.156196'
+        type: inputs
+        version: b0e8731db76e695eee492ecbd3885cc7b552c7ad88c7cebc1b1ea196312e7a84
+      CHNCXR_0006_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/train_CHNCXR_0006_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1QmydpgoCi7VjSUs7RgheFDcIDgozAkA6
+        last_modification: 1711447316.525925
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0006_0.png
+        size: 135286
+        timestamp: '2024-03-26 10:02:21.873953'
+        type: inputs
+        version: cfbd82ce1b3db21296a867311a3ea0b8abc7e1f7163eb442311e9e24a9f0f23b
+      CHNCXR_0006_0_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0006_0_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1byeq04NbED2_FlyfutbNvuiKAPeKyhZw
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0006_0_0_mask.png
+        size: 8018
+        timestamp: '2024-03-26 10:03:37.725564'
+        type: outputs
+        version: 11fce899dddbee347d4c6d730c7c268da836112e20044b3d4000d2b1b4dbadcc
+      CHNCXR_0006_0_1_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0006_0_1_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1y0DIJZA_iH62gnhGsgtB6dWUHbW5V9-z
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0006_0_1_mask.png
+        size: 33358
+        timestamp: '2024-03-26 10:03:53.611445'
+        type: outputs
+        version: 94364ee7073a94f9ab3bd8dc72d4ccec5307b868dff295ac337ce618fdbc6bd3
+      CHNCXR_0006_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/train_CHNCXR_0007_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1FChlLuTUiDmN9ghefBqE7Y4iSNLPWfqr
+        last_modification: 1711447316.505925
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0006_0_mask.png
+        size: 134800
+        timestamp: '2024-03-26 10:02:27.693600'
+        type: inputs
+        version: 6bd1c66a365faab4bf01b1a0c0dbaf79bd797d1e045b9a113615681cc2114d64
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0006_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1cOgw6RfSrNpkTLqVpIb7aSRR9ZodW2ee
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0006_0_mask.png
+        size: 4483
+        timestamp: '2024-03-26 10:13:43.093260'
+        type: inputs
+        version: e6c133282f887aa48810919c6cd55ae1373994248a7c23c2a24865952918b9ca
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0006_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1aE_Q295sXkblW_WWuSkkvKejawm5erRr
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0006_0_mask.png
+        size: 4483
+        timestamp: '2024-03-26 10:21:00.212252'
+        type: inputs
+        version: e6c133282f887aa48810919c6cd55ae1373994248a7c23c2a24865952918b9ca
+      CHNCXR_0007_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0006_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1NJUZW8bAvNBxa0590UJMTaljVhxkHHgw
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0007_0.png
+        size: 4483
+        timestamp: '2024-03-26 10:02:33.648841'
+        type: inputs
+        version: e6c133282f887aa48810919c6cd55ae1373994248a7c23c2a24865952918b9ca
+      CHNCXR_0007_0_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0007_0_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 11OVNdsE062ytEvU0DCZRAV4ZGCYLlQIn
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0007_0_0_mask.png
+        size: 9156
+        timestamp: '2024-03-26 10:03:33.734012'
+        type: outputs
+        version: b1f4140337a88b23b1cbd8c6ed82f413f3dfda1e83508012c64169960eafddba
+      CHNCXR_0007_0_1_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0007_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1s788T5lXCKIAqcDnRuTcS9uh57fjQ5yT
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0007_0_1_mask.png
+        size: 36006
+        timestamp: '2024-03-26 10:03:45.520293'
+        type: outputs
+        version: 7cf8fb806fb005734453ccaf3417a9cf394f356eb468906a9d741a4f1a7572d4
+      CHNCXR_0007_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0005_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1GdNeOcaItRYRT7iBExF3_7o1bdA1OH41
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0007_0_mask.png
+        size: 4405
+        timestamp: '2024-03-26 10:03:00.472967'
+        type: inputs
+        version: 0a057276b348e3ae75eeadba86bfd7c5a7e8a12f5e577c9237f698a5ce69e1ae
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/unet.py
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1orvPG7oJtlEt5dyb2MaYKT8NCLlD6eKQ
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0007_0_mask.png
+        size: 5869
+        timestamp: '2024-03-26 10:13:57.097934'
+        type: inputs
+        version: 59d9f8d7f55096520fdaf82a612fa57ca3f39dbf86c838997ca07e020017e024
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/unet.py
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1OOVmNWsxCP1d0NmoDnq46yMQFyiMnxKz
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0007_0_mask.png
+        size: 5869
+        timestamp: '2024-03-26 10:21:08.447192'
+        type: inputs
+        version: 59d9f8d7f55096520fdaf82a612fa57ca3f39dbf86c838997ca07e020017e024
+      CHNCXR_0008_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/val_CHNCXR_0008_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1RWKvkpxts0Fp1E0DIwRd8gkfDnppNekn
+        last_modification: 1711447331.6298707
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/5907cb2e451c4b25af17e24d7a357582
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0008_0.png
+        size: 131504
+        timestamp: '2024-03-26 10:02:28.583036'
+        type: inputs
+        version: e507b81170e0fdce2a07f6bd3e48fdd3bc358d617d4d06ad4ae5419bb64f496b
+      CHNCXR_0008_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0004_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1U7Ndo48DyXjtnwy9tbxHQaza21mngtWc
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0008_0_mask.png
+        size: 4427
+        timestamp: '2024-03-26 10:14:03.584290'
+        type: inputs
+        version: 04fb64b7d9ada43ab036d302ff49b0f7085f1f5e55e337a9cd53fd05e48ed70e
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0004_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1CrXVbcGSjqLUVCk3zrHNeZ0njXdBIaFb
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0008_0_mask.png
+        size: 4427
+        timestamp: '2024-03-26 10:21:12.363526'
+        type: inputs
+        version: 04fb64b7d9ada43ab036d302ff49b0f7085f1f5e55e337a9cd53fd05e48ed70e
+      CHNCXR_0009_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/train_CHNCXR_0009_0.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1T1KU7Hzejk98Jio7CHSi4PK9lFJbi0jh
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0009_0.png
+        size: 131724
+        timestamp: '2024-03-26 10:03:47.249113'
+        type: inputs
+        version: 3723eec692f4e522a2189e3be4aaa4b0d18f1b14b30e62b019482f20e7594dc2
+      CHNCXR_0009_0_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0009_0_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1XM1LURBwuuWjJB8N-oE42Dl5GLKUo2RK
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0009_0_0_mask.png
+        size: 7939
+        timestamp: '2024-03-26 10:03:20.343422'
+        type: outputs
+        version: aee0e943d05b473dcb791defabd9b0db66649e8b71fbd4f4c7a9525fb952c928
+      CHNCXR_0009_0_1_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0009_0_1_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1QIqN5EFvBkQfqaGrWCAEtU1Ul1W7gyfQ
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0009_0_1_mask.png
+        size: 16150
+        timestamp: '2024-03-26 10:05:07.061561'
+        type: outputs
+        version: 9d759d66c06ec0602e3c925a292469650a0ead3663e7ac5ef179f11177711828
+      CHNCXR_0009_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0009_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1MRQLzodJvFkUJOWjogZXEHlCORh8gI5f
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0009_0_mask.png
+        size: 4376
+        timestamp: '2024-03-26 10:03:06.534607'
+        type: inputs
+        version: b0e8731db76e695eee492ecbd3885cc7b552c7ad88c7cebc1b1ea196312e7a84
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0003_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1RnfFAs9T2vI2c7u_-Ou3_TaaRGO_Sm8U
+        last_modification: 1711448002.0439115
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0009_0_mask.png
+        size: 4451
+        timestamp: '2024-03-26 10:14:31.376373'
+        type: inputs
+        version: 7d9002ac81e7a93d425733290222bb3529980a8123d40db48a9a1580f521db00
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0003_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1clgi6O5pBQ99Fq-7PBF3wlYBJYNbdg5U
+        last_modification: 1711448407.916
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0009_0_mask.png
+        size: 4451
+        timestamp: '2024-03-26 10:21:28.653214'
+        type: inputs
+        version: 7d9002ac81e7a93d425733290222bb3529980a8123d40db48a9a1580f521db00
+      CHNCXR_0010_0.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0007_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 11oJocLF4geft4wj2JbbgwdbmQtk33bRW
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_images/CHNCXR_0010_0.png
+        size: 5099
+        timestamp: '2024-03-26 10:03:39.321027'
+        type: inputs
+        version: 72e7ea562d286911f8734675206466754cd7b94558dcde312aea97623675a57a
+      CHNCXR_0010_0_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0010_0_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1y1jqq2v5QOuZqb0DsMieCDvYN10N5nZK
+        last_modification: 1711447353.821554
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0010_0_0_mask.png
+        size: 6640
+        timestamp: '2024-03-26 10:03:41.661206'
+        type: outputs
+        version: ac55e218bd65ba85a3ba0cf044401c8130e5ac1fc246bef1df87ad1fc2e52e78
+      CHNCXR_0010_0_1_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0010_0_1_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1957X3kTy7Q0ZNFv5WAJQETKk4p5IemcL
+        last_modification: 1711447353.8135538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/CHNCXR_0010_0_1_mask.png
+        size: 13211
+        timestamp: '2024-03-26 10:02:51.909948'
+        type: outputs
+        version: e603b005a1cb8f27deb48364cbdb979d5a592bf0d592ce851335ae73e30d4955
+      CHNCXR_0010_0_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0010_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1LIQHfT-Pd2uxxyxcbvWtypReRHqWmiEH
+        last_modification: 1711447328.7578812
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0010_0_mask.png
+        size: 3806
+        timestamp: '2024-03-26 10:03:25.851843'
+        type: inputs
+        version: 1ceae6bcbe64a5ccb9f02e73e8e361a56e68bc58d179cb8dc78e54349881114b
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0008_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1myKlfLEpBNg85Tpgdwx_gVwPDt0D2Lla
+        last_modification: 1711448002.0479114
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0010_0_mask.png
+        size: 3716
+        timestamp: '2024-03-26 10:13:50.070937'
+        type: inputs
+        version: 33a5246ebe5d19ff48d2f86f042aa26920a4731b7170191b4b2f90fe0efa1422
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0008_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1YyqHPpTzQSF-X05f9CxNg9VnOdc8XCgl
+        last_modification: 1711448407.916
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/inputs/train_masks/CHNCXR_0010_0_mask.png
+        size: 3716
+        timestamp: '2024-03-26 10:21:04.210064'
+        type: inputs
+        version: 33a5246ebe5d19ff48d2f86f042aa26920a4731b7170191b4b2f90fe0efa1422
+      EvaluationAnalysis.pdf:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/EvaluationAnalysis.pdf
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1gjrparY41IM32Zq2CMTJv56Hr-5NDuHb
+        last_modification: 1711448548.3783162
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/a100a442194c47209caf7f1bfabc0ff0
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/EvaluationAnalysis.pdf
+        size: 74725
+        timestamp: '2024-03-26 10:23:16.258704'
+        type: outputs
+        version: 22ea8635bfd14e863d850f4e20911bff9fce2d74b0ec6a2f99904a6c2b6c69ba
+      cp:
+      - code_commit: 345db4448578c234264f464005a60145a3dd4402
+        git_url: https://github.com/swarmourr/PegasusGit/blob/345db4448578c234264f464005a60145a3dd4402/cp
+        last_modification: 1711447304.0019693
+        path: /bin/cp
+        size: 153976
+        timestamp: '2024-03-26 10:02:20.471226'
+        type: Transormations
+        version: 40ea53f38efe555c09a2c1c860379190e2af94427daaa68756874154c3fa1188
+      evaluate.py:
+      - code_commit: 112dcd1ab066015f99767c48256759e5244b2dc2
+        git_url: https://github.com/swarmourr/PegasusGit/blob/112dcd1ab066015f99767c48256759e5244b2dc2/evaluate
+        last_modification: 1711447304.0019693
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/evaluate.py
+        size: 5364
+        timestamp: '2024-03-26 10:02:03.506219'
+        type: Transormations
+        version: 9b7ea5831193d3fd66d75ebe440cdc67830341d1bee0820d0ecdd7287ec7b5f9
+      hpo.py:
+      - code_commit: a4cbe3fa94936f689b40ee393288b1c3c3854810
+        git_url: https://github.com/swarmourr/PegasusGit/blob/a4cbe3fa94936f689b40ee393288b1c3c3854810/hpo
+        last_modification: 1711447293.002008
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/hpo.py
+        size: 5954
+        timestamp: '2024-03-26 10:01:55.432488'
+        type: Transormations
+        version: 05b2a3d8aa5eee0708302b7ccaf27f86d77fc98ca0fa08a6fc2aae55741d70c8
+      model.h5:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/model.h5
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1u-ktIQfHMr5vp31y7E0J7Ltq-wPfWthp
+        last_modification: 1711448452.2659233
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/model.h5
+        size: 310874652
+        timestamp: '2024-03-26 10:21:11.447936'
+        type: outputs
+        version: 05b3c2b3c65ec5c48d968537ee47fb84581d9c347af65c1a7434248bf14eb76e
+      pegasus_yaml_combiner.py:
+      - code_commit: da22578bc405d1c584826a472840e1432ea1f7b9
+        git_url: https://github.com/swarmourr/PegasusGit/blob/da22578bc405d1c584826a472840e1432ea1f7b9/combiner
+        last_modification: 1711447304.0019693
+        path: /home/poseidon/Software/Pegasus/pegasus-5.0.7dev/lib/python3.8/dist-packages/Pegasus/api/Versionning/pegasus_yaml_combiner.py
+        size: 8243
+        timestamp: '2024-03-26 10:02:14.411255'
+        type: Transormations
+        version: 1ccc9239b37a69b96133169f8ddae143d9041095ca0b8d6d6e5bb0e3a3182c3c
+      pred_CHNCXR_0002_0_norm_mask.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/pred_CHNCXR_0002_0_norm_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1m7iG3D_ssAoUILoD_2Vag3DDGtN0euNz
+        last_modification: 1711448519.7581992
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/be9ea28c951d45e39da9927f58acb230
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/pred_CHNCXR_0002_0_norm_mask.png
+        size: 13677
+        timestamp: '2024-03-26 10:22:09.536314'
+        type: outputs
+        version: 739795d5bcffc988a002ea4786843d48918555293a13b16b52e8e834478d9f5d
+      prediction.py:
+      - code_commit: e82a988960e8aa1f1295b9c9d19fc51d4edf17f0
+        git_url: https://github.com/swarmourr/PegasusGit/blob/e82a988960e8aa1f1295b9c9d19fc51d4edf17f0/predict_masks
+        last_modification: 1711447304.0019693
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/prediction.py
+        size: 2816
+        timestamp: '2024-03-26 10:02:00.823166'
+        type: Transormations
+        version: 1fa4f0ddfdec1f63742d23331771e0528c468196bd9ff6f85d651808ace85677
+      preprocess.py:
+      - code_commit: c77625a3df5181015e6c6252c9ad6d89e4f60a3d
+        git_url: https://github.com/swarmourr/PegasusGit/blob/c77625a3df5181015e6c6252c9ad6d89e4f60a3d/preprocess
+        last_modification: 1711447293.002008
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/preprocess/preprocess.py
+        size: 8581
+        timestamp: '2024-03-26 10:01:52.750782'
+        type: Transormations
+        version: 57c57bf7b93e8896b6a6af6854eb29f4379df9a7fe2487f86bc03c1a044fa29b
+      study_results.txt:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/study_results.txt
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1PzUG1Gera0iyAlllXEuXUyHB_CTOrDq_
+        last_modification: 1711448002.0439115
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/study_results.txt
+        size: 69
+        timestamp: '2024-03-26 10:13:43.795283'
+        type: outputs
+        version: ac87f072ba151cd765c8138ea360b36a2826a2595889844af7c2cf0558384d3e
+      test_CHNCXR_0002_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/test_CHNCXR_0002_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1eywqPiOWX0QeTvAFfi4WBuXjGhQn1fNs
+        last_modification: 1711447344.4578245
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/5769c4f4b97744b3b7d0985e0e03a533
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/test_CHNCXR_0002_0_norm.png
+        size: 35367
+        timestamp: '2024-03-26 10:02:33.949052'
+        type: outputs
+        version: 140288cdf7b708e85984ca82c65cb8982a0a9734238ced736cb9c93128ea53d1
+      train_CHNCXR_0001_0_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0007_0_1_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1SjtxlNKeYcPBkupEqdkNtU6a2yS4HGPN
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0001_0_0_norm.png
+        size: 32971
+        timestamp: '2024-03-26 10:04:30.378840'
+        type: outputs
+        version: a184fd76ddca033240d1a6fd19724d6050ee875a0541f021ac33b38c89a6d1ce
+      train_CHNCXR_0001_0_1_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0001_0_1_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1FGBHBnRwkRCGj90MzLr6HirJ2ywr1fyr
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0001_0_1_norm.png
+        size: 33133
+        timestamp: '2024-03-26 10:04:44.632988'
+        type: outputs
+        version: 80c24ba82558f21c1ca357ca7684f93b88bf1eeca50bc64036a02988ee37c3ed
+      train_CHNCXR_0001_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0001_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1NkjsCL0Haf6BUeY1WUtoGwqFn-rDFgJQ
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0001_0_norm.png
+        size: 35643
+        timestamp: '2024-03-26 10:04:49.082990'
+        type: outputs
+        version: ee214f0a9786d48ce20b2c10aa6cfed20180c8ce3ffe21858063787e2a68fb79
+      train_CHNCXR_0003_0_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0003_0_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1ZxvTRG5vFyiSiWf2Bi1Wl1MPHQ4YiX1_
+        last_modification: 1711447316.9574156
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0003_0_0_norm.png
+        size: 36299
+        timestamp: '2024-03-26 10:04:35.531929'
+        type: outputs
+        version: 82f17d3a36365150257fa86233fe66eb2a96fc820cf762d4f50b55f87503b35c
+      train_CHNCXR_0003_0_1_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0005_0_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1P4T3tVK0dI9dXQSKn_TMveS4Jyh_ZIA6
+        last_modification: 1711447316.8894153
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0003_0_1_norm.png
+        size: 36211
+        timestamp: '2024-03-26 10:04:06.126265'
+        type: outputs
+        version: 048187704d0852604a90a6f1d64088b685b0d9b9b9dc0b23b528edcd12d71d6a
+      train_CHNCXR_0003_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0003_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1oSo6tx_RyIQSpIhDeciYf0WdnUkt8bYj
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0003_0_norm.png
+        size: 36378
+        timestamp: '2024-03-26 10:02:56.739101'
+        type: outputs
+        version: 0d8ce965f276ca77b8172a6abdb4e83f1e7b042f279bd0638f02d18298e642ff
+      train_CHNCXR_0005_0_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0010_0_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1ngyHUohcDhWvcQ-LjWl5kBNnzw2r7jC_
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0005_0_0_norm.png
+        size: 35338
+        timestamp: '2024-03-26 10:04:10.202672'
+        type: outputs
+        version: 260d802da11cadae11b64e452c8e8bbbb471c67fdd3316fea7e151c1e37234f2
+      train_CHNCXR_0005_0_1_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0005_0_1_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1WGw895HufDMpfock_8H4WWFazMqSTGFO
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0005_0_1_norm.png
+        size: 33775
+        timestamp: '2024-03-26 10:05:15.875110'
+        type: outputs
+        version: eab50ef6f9949ba9921ad5b22a4faa1a936ef6086118375e7d515a1349a5b4e4
+      train_CHNCXR_0005_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0005_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1FS-vb8yERIrTdWVubJIJolm0xNv4b2Hm
+        last_modification: 1711447353.821554
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0005_0_norm.png
+        size: 36149
+        timestamp: '2024-03-26 10:03:29.566765'
+        type: outputs
+        version: 96fc52993b083c6fcfba2eeb2922d3b78a630e72267e6c596d50e8d54a1baeaa
+      train_CHNCXR_0006_0_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0006_0_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 19UAcEkUFpX94jG6wATUTOCIF5QK4VZCM
+        last_modification: 1711447316.9254155
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0006_0_0_norm.png
+        size: 35693
+        timestamp: '2024-03-26 10:03:01.416805'
+        type: outputs
+        version: a705ee9772e38bdd1ebf842fb1c9c1cd316abd5be291f34e57371b290a47401b
+      train_CHNCXR_0006_0_1_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0010_0_1_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1L6R3mYfhNtMdJ01wraTVe43o4I5FPsJN
+        last_modification: 1711447353.8135538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0006_0_1_norm.png
+        size: 32662
+        timestamp: '2024-03-26 10:03:57.612493'
+        type: outputs
+        version: 1d8aeba1772b1dd70b883f7870bd49b291641c132cd332be4d6641e75f4ccba9
+      train_CHNCXR_0006_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0006_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1N-0agJKtrioug_5mos26USqhr2v4oIpn
+        last_modification: 1711447316.9574156
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0006_0_norm.png
+        size: 35765
+        timestamp: '2024-03-26 10:04:53.408919'
+        type: outputs
+        version: bab3741417b70ed5d6637a6b82f1b1b85fd6c791a29e5103c259b5f4bcf0a1af
+      train_CHNCXR_0007_0_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0001_0_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1cyDjG6XZ2kM-b4Me-1xMa9KkgP5JdULj
+        last_modification: 1711447353.821554
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0007_0_0_norm.png
+        size: 35758
+        timestamp: '2024-03-26 10:04:26.192718'
+        type: outputs
+        version: 91bb1411cd40ac58e24cec69049e7bb515edc5a0efb5664695808763b9af4036
+      train_CHNCXR_0007_0_1_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0006_0_1_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1Qcht9ZkL4Th9h4RfeXj8gvHW4OW89LKl
+        last_modification: 1711447353.821554
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0007_0_1_norm.png
+        size: 16532
+        timestamp: '2024-03-26 10:05:11.477107'
+        type: outputs
+        version: 2b2569d3d57448135c8afc4518b4805edfcda8584aa37031757070bac88ddafc
+      train_CHNCXR_0007_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0007_0_1_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1rYAg3UJ8wfm-i1Mat9RIn2gJAlavqGuI
+        last_modification: 1711447353.821554
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0007_0_norm.png
+        size: 18425
+        timestamp: '2024-03-26 10:03:49.419514'
+        type: outputs
+        version: dc8b4ccb3010ad342eda3a4f7de05e05fe32aa6d74998fa28359183060a275dd
+      train_CHNCXR_0009_0_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0009_0_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1wiYRPTjVrYj6OTwLV6kXzmHlC3Exkpa8
+        last_modification: 1711447316.9574156
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0009_0_0_norm.png
+        size: 35249
+        timestamp: '2024-03-26 10:03:10.824121'
+        type: outputs
+        version: 8d801bd1f1f5c203e8fca4d35cca8c9c85f97a983839618623c75aaf32fd0a06
+      train_CHNCXR_0009_0_1_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0009_0_1_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1EmdG1EM28sUogZD425TlpbyVg9rDcSO3
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0009_0_1_norm.png
+        size: 32718
+        timestamp: '2024-03-26 10:04:40.247017'
+        type: outputs
+        version: 00851ddae9747442dc65f3800badbb9c54db5baebad3a2009ec842c9e1df533d
+      train_CHNCXR_0009_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0009_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1zlhPHLwU1Jb0QBBn8hl6jBMWEms696TY
+        last_modification: 1711447353.821554
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0009_0_norm.png
+        size: 35335
+        timestamp: '2024-03-26 10:02:47.332836'
+        type: outputs
+        version: 9b236a3594deffd2e8f6c4036958463a158c0910b1c39dd048d98cf03eebfec9
+      train_CHNCXR_0010_0_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/CHNCXR_0003_0_1_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1QbaLeH3ilrOhROryZzJYYgM2YZD8RjQk
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0010_0_0_norm.png
+        size: 15888
+        timestamp: '2024-03-26 10:04:14.183835'
+        type: outputs
+        version: 466f18c1bda4db6651283e3094447a41edc3481cf50b839bba688df698fbf89a
+      train_CHNCXR_0010_0_1_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0003_0_1_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1NSuhNy9vFHltBHOm7gH9w1GCUcUQHIgu
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0010_0_1_norm.png
+        size: 33892
+        timestamp: '2024-03-26 10:04:01.912277'
+        type: outputs
+        version: d68afca2252fd3756e7a843049fd0538d77feb469f4e9daa173975f10d037c64
+      train_CHNCXR_0010_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/train_CHNCXR_0010_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1bpjSP3rOyNhKayPP0WvyD1FQyayP_CIl
+        last_modification: 1711447353.8175538
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/0f1f7e92a04b416391e4dfc99820541f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/train_CHNCXR_0010_0_norm.png
+        size: 35333
+        timestamp: '2024-03-26 10:03:06.253622'
+        type: outputs
+        version: 36c3325bf6cb0fa0f1e449ef53af3d5d0043133f8de5bea7c26f0305b6e46ee4
+      train_model.py:
+      - code_commit: 39808ed6bd000bd171cec4f59ccdc0510f8e932e
+        git_url: https://github.com/swarmourr/PegasusGit/blob/39808ed6bd000bd171cec4f59ccdc0510f8e932e/train_model
+        last_modification: 1711447304.0019693
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/train_model.py
+        size: 3522
+        timestamp: '2024-03-26 10:01:58.058183'
+        type: Transormations
+        version: 447c96672e9ab61569b96403684e34b03d76eb4cf81959c69510447cb270a41a
+      transformationVersioning.py:
+      - code_commit: bbd99b5ca6c6e2e64ac07fe8679abb80ac44dfb3
+        git_url: https://github.com/swarmourr/PegasusGit/blob/bbd99b5ca6c6e2e64ac07fe8679abb80ac44dfb3/version_transformations
+        last_modification: 1711447304.0019693
+        path: /home/poseidon/Software/Pegasus/pegasus-5.0.7dev/lib/python3.8/dist-packages/Pegasus/api/Versionning/transformationVersioning.py
+        size: 10996
+        timestamp: '2024-03-26 10:02:17.158089'
+        type: Transormations
+        version: 867e4f5109f36f17f6a5ec49942b371fd8219759e4ba8920b9055970757d9c25
+      unet.py:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0005_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1eo1EIWRxYImHNSaQQpqO2C9lsVdkbBwQ
+        last_modification: 1711448011.2999938
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/cbe2f99ceb2f4f3d9e2e6412fa7ab77f
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/unet.py
+        size: 4405
+        timestamp: '2024-03-26 10:14:17.344560'
+        type: inputs
+        version: 0a057276b348e3ae75eeadba86bfd7c5a7e8a12f5e577c9237f698a5ce69e1ae
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0005_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1iCOVo_mCkjJLk037VOdwsw3CAlPQ1xSC
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/unet.py
+        size: 4405
+        timestamp: '2024-03-26 10:21:20.180343'
+        type: inputs
+        version: 0a057276b348e3ae75eeadba86bfd7c5a7e8a12f5e577c9237f698a5ce69e1ae
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/unet.py
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1-41rb9abvzDh2C53ddlfmhvAZYB9RPsw
+        last_modification: 1711448519.9622
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/be9ea28c951d45e39da9927f58acb230
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/unet.py
+        size: 5869
+        timestamp: '2024-03-26 10:22:12.843409'
+        type: inputs
+        version: 59d9f8d7f55096520fdaf82a612fa57ca3f39dbf86c838997ca07e020017e024
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/unet.py
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1UTj6r0dHkRbjTDCAi8_hGKVDgTN5602-
+        last_modification: 1711448585.0944667
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/a100a442194c47209caf7f1bfabc0ff0
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/unet.py
+        size: 5869
+        timestamp: '2024-03-26 10:23:17.567608'
+        type: inputs
+        version: 59d9f8d7f55096520fdaf82a612fa57ca3f39dbf86c838997ca07e020017e024
+      - code_commit: 9a6b6f9fe258e17ea3e75243d473b3b393af00e8
+        git_url: https://github.com/swarmourr/PegasusGit/blob/9a6b6f9fe258e17ea3e75243d473b3b393af00e8/unet
+        last_modification: 1711447304.0019693
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/unet.py
+        size: 5869
+        timestamp: '2024-03-26 10:02:06.175519'
+        type: Transormations
+        version: 59d9f8d7f55096520fdaf82a612fa57ca3f39dbf86c838997ca07e020017e024
+      utils.py:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/inputs/CHNCXR_0010_0_mask.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1fSR-XsuqoiPtPh9ST7LVOIGv6cGar2sz
+        last_modification: 1711448449.668
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/03ed93d37df54bc197b5feccb1c26d15
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/utils.py
+        size: 3806
+        timestamp: '2024-03-26 10:21:32.772532'
+        type: inputs
+        version: 1ceae6bcbe64a5ccb9f02e73e8e361a56e68bc58d179cb8dc78e54349881114b
+      - code_commit: 517514c6f68aa0d8d38c380294da33e12f165bbf
+        git_url: https://github.com/swarmourr/PegasusGit/blob/517514c6f68aa0d8d38c380294da33e12f165bbf/utils
+        last_modification: 1711447293.002008
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/bin/model/utils.py
+        size: 1333
+        timestamp: '2024-03-26 10:02:08.853909'
+        type: Transormations
+        version: 0b0c905785810cb8f929b7eaa90a589c7ad37b5c38f42893445aa916fe01c625
+      val_CHNCXR_0004_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/val_CHNCXR_0004_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1HhwQLIA905JJ9jQeVQaXgah_aqEppLTA
+        last_modification: 1711447312.996
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/5907cb2e451c4b25af17e24d7a357582
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/val_CHNCXR_0004_0_norm.png
+        size: 36092
+        timestamp: '2024-03-26 10:02:47.380749'
+        type: outputs
+        version: 345d8ef138a30c3b1f543d1cb906aa6f6e2f225735d13dc33fbfa9b41b8be9c9
+      val_CHNCXR_0008_0_norm.png:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/outputs/val_CHNCXR_0008_0_norm.png
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: GPN-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1_wy3B7aQ_YaumEQ8eChXeGCAEd11oVbj
+        last_modification: 1711447313.032
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/27/runs/5907cb2e451c4b25af17e24d7a357582
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/val_CHNCXR_0008_0_norm.png
+        size: 35101
+        timestamp: '2024-03-26 10:02:43.052787'
+        type: outputs
+        version: 81981d44692d8ca10159d526f701334d2918aceef5e28831a8a9d8a8085c3d68
+      versiondata.py:
+      - code_commit: 5b188dfbf79dc8a9bc32170d62814c142aeaa02f
+        git_url: https://github.com/swarmourr/PegasusGit/blob/5b188dfbf79dc8a9bc32170d62814c142aeaa02f/data_tracker
+        last_modification: 1711447293.002008
+        path: /home/poseidon/Software/Pegasus/pegasus-5.0.7dev/lib/python3.8/dist-packages/Pegasus/api/Versionning/versiondata.py
+        size: 24963
+        timestamp: '2024-03-26 10:02:11.814663'
+        type: Transormations
+        version: 34f42820489064fb3a03f6a35dcdfe9dd92f52fa890753c0137e936855b0732c
+      workflow.yml:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/9ace0994-2ba7-468d-896f-a9c29f1909be/workflow/wf
+        env:
+          CPU_Quota: Not Set
+          Container_Name: unet_wf_model.simg
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 16ue_x3ELMvHrbbqKVbQGAenXWKzIdeTt
+        last_modification: 1711447304.0699692
+        mlflow_url: This jobs is not tracked by MLFLOW
+        path: /home/poseidon/GitWF/lung-instance-segmentation-workflow/workflow.yml
+        size: 57532
+        timestamp: '2024-03-26 10:01:56.631234'
+        type: workflow
+        version: 04f6f74e378eb1cd7054a5db005e4d5dca4a9378a93363a5ac70575618bcf129
     cb4ac719-e60b-40e7-a189-fba9b855526c:
       CHNCXR_0001_0.png:
       - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/tracked_lung-instance-segmentation-wf/cb4ac719-e60b-40e7-a189-fba9b855526c/inputs/train_CHNCXR_0001_0.png
