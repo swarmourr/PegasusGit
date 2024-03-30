@@ -245,6 +245,7 @@ class FederatedLearningWorkflow():
         model_perf_job = (Job("perf_model", _id=f"perf_model_{main_round}", node_label=f"perf_model_format_{main_round}")
             .add_args(f"-f {' '.join([x.lfn for x in evaluate_model_outputs])}  -n {result_file_name} -r {main_round} -score {score} -max {rounds}  -c {str(clients)} -sc {str(selection)}")
             .add_inputs(*evaluate_model_outputs,File("pegasus_data_config.conf"))   
+            .add_env(DATA_TRACKER_CONFIG="pegasus_data_config.conf")
             .add_outputs(Final_model_Results,replicas_files,new_sub_wf, stage_out=True, register_replica=False)
         ) 
 
@@ -256,6 +257,7 @@ class FederatedLearningWorkflow():
                         "--force",
                         "--output-site", "local")\
             .add_inputs(File(last_model_name), train_images, train_labels, test_images, test_labels,replicas_files,File("pegasus_data_config.conf"))\
+            .add_env(DATA_TRACKER_CONFIG="pegasus_data_config.conf")
             #.set_stdout(Final_model_Results, stage_out=True, register_replica=True)
 
         self.wf.add_jobs(locals()["local_subwf_"+str(main_round+1)])
