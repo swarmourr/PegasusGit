@@ -102,6 +102,8 @@ class GitHubFilePusher:
             # Decode the content from base64
             content_base64 = response.json()["content"]
             file_content = base64.b64decode(content_base64).decode("utf-8")
+            print(file_content)
+            print("hadi content")
             return file_content
         else:
             print(f"Failed to pull file '{file_path}': {response.text}")
@@ -133,7 +135,9 @@ class metadata_class:
                 # Load existing YAML data (if available)
                 with open(output_file_path, 'r') as output_file:
                     combined_data = yaml.safe_load(output_file)
-            except FileNotFoundError:
+                    print(combined_data)
+            except Exception as e:
+                print(e.msg)
                 combined_data = {}
                 
         self.create_directories("pegasus-data")
