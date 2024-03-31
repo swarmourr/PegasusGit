@@ -1,5 +1,635 @@
 workflow:
   federated-learning-example:
+    08c37a10-3619-44f7-bf11-93cd12479aa8:
+      Model_performences_0.csv:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/outputs/Model_performences_0.csv
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1j0e1h24zKw5qiThKWWuMFTyKOHPAVA9z
+        last_modification: 1711892460.5041785
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/0d9393bc09ba47c593488e70ebe9ffa7
+        path: /srv/Model_performences_0.csv
+        size: 266
+        timestamp: '2024-03-31 13:41:16.861902'
+        type: outputs
+        version: 5aae1516757733943abcfabce5187bc3d50b5bf0ceb9e5c995bd98f2ccf036ba
+      cp:
+      - code_commit: 3c2c5401c8f9ca864c60f112cc986dfa10c38d03
+        git_url: https://github.com/swarmourr/PegasusGit/blob/3c2c5401c8f9ca864c60f112cc986dfa10c38d03/cp
+        last_modification: 1711892279.682825
+        path: /bin/cp
+        size: 153976
+        timestamp: '2024-03-31 13:38:40.264114'
+        type: Transormations
+        version: 40ea53f38efe555c09a2c1c860379190e2af94427daaa68756874154c3fa1188
+      evaluate_model.py:
+      - code_commit: d2141eb0c39920114a6157ae85da444c3fb101b1
+        git_url: https://github.com/swarmourr/PegasusGit/blob/d2141eb0c39920114a6157ae85da444c3fb101b1/evaluate_model
+        last_modification: 1711892306.8269453
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/evaluate_model.py
+        size: 2177
+        timestamp: '2024-03-31 13:38:33.071492'
+        type: Transormations
+        version: 2838f450f8666ccccede2557e1a4b0a3e1f24b11018a0d0712a3ad639b71553a
+      global_model.py:
+      - code_commit: bb65e95e17ce068a2c0b66a41c7c5fa36a1f3f3a
+        git_url: https://github.com/swarmourr/PegasusGit/blob/bb65e95e17ce068a2c0b66a41c7c5fa36a1f3f3a/global_model
+        last_modification: 1711892306.8269453
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/global_model.py
+        size: 2347
+        timestamp: '2024-03-31 13:38:31.967608'
+        type: Transormations
+        version: b8e82f577100e475293c600c65d7634ec95d49cb4b9297db7ba27a234fe0c593
+      global_model_evaluation_3_0.csv:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/outputs/global_model_evaluation_3_0.csv
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1kGu1SpV8udnQoYf1a_MocDv8ONabIjLq
+        last_modification: 1711892405.2633824
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/764d2f145d5e402abb277e7f26aedd49
+        path: /srv/global_model_evaluation_3_0.csv
+        size: 95
+        timestamp: '2024-03-31 13:40:39.699789'
+        type: outputs
+        version: a9cfe5a757800d15a00cb4afcd3b952e7557a34c43eea3379f5604ce4cfc91d2
+      global_model_evaluation_6_0.csv:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/outputs/global_model_evaluation_6_0.csv
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1d0HvjAEqU3oSVNqfpHDLSgQ1AlRXV3k-
+        last_modification: 1711892424.7874696
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f0c01cfdb06340f19ab431504dce2839
+        path: /srv/global_model_evaluation_6_0.csv
+        size: 95
+        timestamp: '2024-03-31 13:40:59.045572'
+        type: outputs
+        version: e014050226ee4f1c5340c99a2707a8b7e5e50f35fbabe4b2f49195280b4c678c
+      global_model_round_0.h5:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/outputs/global_model_round_0.h5
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1Mh_sdODDWKS4jOIsJwzDgq0pdtGDcclM
+        last_modification: 1711892379.1592662
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/18a1a046cb01418d9030f54dd2396b9b
+        path: /srv/global_model_round_0.h5
+        size: 743784
+        timestamp: '2024-03-31 13:40:20.594050'
+        type: outputs
+        version: 78a9e14c1e053ed6a884a0316fb9098354c15664b9e520aa4630df8567aca9b2
+      global_model_round_init.h5:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/global_model_round_init.h5
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1MVgpcLNY0FYqBdXY-V4c97lGjHICtqoo
+        last_modification: 1711892339.4230897
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/8822cdd28416423f86806a7c42c6a4fd
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/output/global_model_round_init.h5
+        size: 378240
+        timestamp: '2024-03-31 13:39:45.188915'
+        type: inputs
+        version: b1ab7b48ec20fd828ad3269e0b68599ec7a296ea70cd4fb29937607b9c8a3d5d
+      init_model.py:
+      - code_commit: 51ba720600bc3f52ad96d9406292c94b50f11f94
+        git_url: https://github.com/swarmourr/PegasusGit/blob/51ba720600bc3f52ad96d9406292c94b50f11f94/init_model
+        last_modification: 1711892306.8269453
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/init_model.py
+        size: 1330
+        timestamp: '2024-03-31 13:38:29.765344'
+        type: Transormations
+        version: 50cf4cabf99614e1dcf5efaccd11019d593db5ea5bde37d2d07226d5eddccf46
+      local_model.py:
+      - code_commit: 5f971300dbd42651a9596f4edfdbdee1ddb29894
+        git_url: https://github.com/swarmourr/PegasusGit/blob/5f971300dbd42651a9596f4edfdbdee1ddb29894/local_model
+        last_modification: 1711892279.6108248
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/local_model.py
+        size: 2155
+        timestamp: '2024-03-31 13:38:30.861701'
+        type: Transormations
+        version: 2b0973c49bd96d11d4a0000536424ed7135793ada966dd4dfe799fc819e9e0d5
+      local_model_48000_53999_round_0.h5:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/outputs/local_model_48000_53999_round_0.h5
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1PCZCBquQpzEVikncL-VHgRlpLRE1nZXP
+        last_modification: 1711892324.708314
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/8822cdd28416423f86806a7c42c6a4fd
+        path: /srv/local_model_48000_53999_round_0.h5
+        size: 744816
+        timestamp: '2024-03-31 13:38:58.455269'
+        type: outputs
+        version: 74bdc4c5142ab661071cfc0eabdcf25dc834abbd2db014d915d3c5dd0e7ed9c2
+      local_wf_round_0.yml:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/workflow/wf
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 16fy75TDVPa3q_D_wfC5en0Q8V5WMbu_X
+        last_modification: 1711892285.3123558
+        mlflow_url: This jobs is not tracked by MLFLOW
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/output/local_wf_round_0.yml
+        size: 27961
+        timestamp: '2024-03-31 13:38:13.227842'
+        type: workflow
+        version: 5e67e7b2d06bb15fbf6936d52de65119de8d77c43baa7be4c78907ee10a3aeee
+      pegasus_data_config.conf:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/pegasus_data_config.conf
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1Q-h7Lf4hNNS1LaL2_8cAgSVioBKbPjUf
+        last_modification: 1711892482.3357265
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/0d9393bc09ba47c593488e70ebe9ffa7
+        path: /home/poseidon/.pegasus/pegasus_data_config.conf
+        size: 529
+        timestamp: '2024-03-31 13:41:29.294874'
+        type: inputs
+        version: 0891ae564ebe9ca847174d281463b22b716abde9b8d3069d2de51b0124db48a9
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/pegasus_data_config.conf
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 17bMt0sP2XHcRmboFKZ1CZjcKyPqJoGxO
+        last_modification: 1711893945.930173
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f1cc1935daa74b5e8509e5e3bf90ec3a
+        path: /home/poseidon/.pegasus/pegasus_data_config.conf
+        size: 529
+        timestamp: '2024-03-31 14:06:11.869926'
+        type: inputs
+        version: 0891ae564ebe9ca847174d281463b22b716abde9b8d3069d2de51b0124db48a9
+      pegasus_yaml_combiner.py:
+      - code_commit: c143ed1656afa1ebd541227c9249ad7158407f16
+        git_url: https://github.com/swarmourr/PegasusGit/blob/c143ed1656afa1ebd541227c9249ad7158407f16/combiner
+        last_modification: 1711892279.682825
+        path: /usr/local/lib/python3.8/dist-packages/Pegasus/api/Versionning/pegasus_yaml_combiner.py
+        size: 8243
+        timestamp: '2024-03-31 13:38:37.687278'
+        type: Transormations
+        version: 1ccc9239b37a69b96133169f8ddae143d9041095ca0b8d6d6e5bb0e3a3182c3c
+      perf_model.py:
+      - code_commit: be1893f1c56ca43ca729c9c1555b9c195ec8f729
+        git_url: https://github.com/swarmourr/PegasusGit/blob/be1893f1c56ca43ca729c9c1555b9c195ec8f729/perf_model
+        last_modification: 1711892279.5788245
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/perf_model.py
+        size: 18055
+        timestamp: '2024-03-31 13:38:34.206515'
+        type: Transormations
+        version: 137f99bdbd6833d9b4d285bf996bee9bc340587e89f1076a256693809b54ceaa
+      replicas.yml:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/outputs/replicas.yml
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1tjti0qWOZcnBgsy-ShmVrFQ95MMKMyL_
+        last_modification: 1711892454.684184
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/0d9393bc09ba47c593488e70ebe9ffa7
+        path: /srv/replicas.yml
+        size: 1041
+        timestamp: '2024-03-31 13:41:07.947600'
+        type: outputs
+        version: 6294b5a756014c073c4b1c83b85d73999cddc36b53651f7382ca72432d97f647
+      t10k-images-idx3-ubyte:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/t10k-images-idx3-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 140OxZWNFXS1AXvDStkkDh1AZvKa-fEg1
+        last_modification: 1711892426.7914784
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f0c01cfdb06340f19ab431504dce2839
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/t10k-images-idx3-ubyte
+        size: 7840016
+        timestamp: '2024-03-31 13:41:01.241750'
+        type: inputs
+        version: 0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/t10k-images-idx3-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1WV6e2pqjjRRcR_1Y1I2BQfc3vFOG4oUi
+        last_modification: 1711892405.128232
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/764d2f145d5e402abb277e7f26aedd49
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/t10k-images-idx3-ubyte
+        size: 7840016
+        timestamp: '2024-03-31 13:40:18.403950'
+        type: inputs
+        version: 0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/t10k-images-idx3-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1EsqCDn7L97TBW5OByhVLAgnLELR_IM-0
+        last_modification: 1711893918.806052
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f1cc1935daa74b5e8509e5e3bf90ec3a
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/t10k-images-idx3-ubyte
+        size: 7840016
+        timestamp: '2024-03-31 14:05:53.367935'
+        type: inputs
+        version: 0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7
+      t10k-labels-idx1-ubyte:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/t10k-labels-idx1-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 18jA-IYqad32BxbxRNApL45c-VVjmjEXj
+        last_modification: 1711892426.5114772
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f0c01cfdb06340f19ab431504dce2839
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/t10k-labels-idx1-ubyte
+        size: 10008
+        timestamp: '2024-03-31 13:41:05.902982'
+        type: inputs
+        version: ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/t10k-labels-idx1-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1Go92VhGckwpyDk6xqndM33Bzsovc1KEb
+        last_modification: 1711892404.9922323
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/764d2f145d5e402abb277e7f26aedd49
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/t10k-labels-idx1-ubyte
+        size: 10008
+        timestamp: '2024-03-31 13:40:22.529785'
+        type: inputs
+        version: ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/t10k-labels-idx1-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1ctMiN2AwrQsucgQZ1gh9vcgXBTg-Fg4R
+        last_modification: 1711893917.8580477
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f1cc1935daa74b5e8509e5e3bf90ec3a
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/t10k-labels-idx1-ubyte
+        size: 10008
+        timestamp: '2024-03-31 14:06:07.222528'
+        type: inputs
+        version: ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2
+      train-images-idx3-ubyte:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/train-images-idx3-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 185yXTtwy5JY19jOch0O8mX-oD2Z0kxCx
+        last_modification: 1711892340.159093
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/8822cdd28416423f86806a7c42c6a4fd
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/train-images-idx3-ubyte
+        size: 47040016
+        timestamp: '2024-03-31 13:39:35.837298'
+        type: inputs
+        version: ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/train-images-idx3-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1nIVxQUmVRqyHdMHAzi_WcMo3seaIdUI8
+        last_modification: 1711893918.7020514
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f1cc1935daa74b5e8509e5e3bf90ec3a
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/train-images-idx3-ubyte
+        size: 47040016
+        timestamp: '2024-03-31 14:05:58.615238'
+        type: inputs
+        version: ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db
+      train-labels-idx1-ubyte:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/train-labels-idx1-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1foXUOgqct2kF57UwLXQOtGE_K8eG27zG
+        last_modification: 1711892339.3470893
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/8822cdd28416423f86806a7c42c6a4fd
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/train-labels-idx1-ubyte
+        size: 60008
+        timestamp: '2024-03-31 13:39:40.125403'
+        type: inputs
+        version: 65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/inputs/train-labels-idx1-ubyte
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: DALL-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1p69IiEYsiqWRXtjIh0Y1G4_sKG2c-5Q3
+        last_modification: 1711893917.8580477
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/f1cc1935daa74b5e8509e5e3bf90ec3a
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../mnist/train-labels-idx1-ubyte
+        size: 60008
+        timestamp: '2024-03-31 14:06:02.781849'
+        type: inputs
+        version: 65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5
+      transformationVersioning.py:
+      - code_commit: 76a4f5b44fad0aef39c797108b7f8d5ba0b3ca8a
+        git_url: https://github.com/swarmourr/PegasusGit/blob/76a4f5b44fad0aef39c797108b7f8d5ba0b3ca8a/version_transformations
+        last_modification: 1711892279.6108248
+        path: /usr/local/lib/python3.8/dist-packages/Pegasus/api/Versionning/transformationVersioning.py
+        size: 10996
+        timestamp: '2024-03-31 13:38:38.803414'
+        type: Transormations
+        version: 867e4f5109f36f17f6a5ec49942b371fd8219759e4ba8920b9055970757d9c25
+      versiondata.py:
+      - code_commit: 5235661ce49929a04d4e29c03c00c2c2a63d61ce
+        git_url: https://github.com/swarmourr/PegasusGit/blob/5235661ce49929a04d4e29c03c00c2c2a63d61ce/data_tracker
+        last_modification: 1711892279.6108248
+        path: /usr/local/lib/python3.8/dist-packages/Pegasus/api/Versionning/versiondata.py
+        size: 24859
+        timestamp: '2024-03-31 13:38:36.606315'
+        type: Transormations
+        version: ac7d6dacad00a1d4d2529c798d1395c4f042f5b928a459205fbcffec4525daa5
+      workflow_generator_sub.py.old:
+      - code_commit: 4cc8d88ec1bfdac1f4d81dd8d065ea47dc898207
+        git_url: https://github.com/swarmourr/PegasusGit/blob/4cc8d88ec1bfdac1f4d81dd8d065ea47dc898207/build_local_workflow
+        last_modification: 1711892279.6108248
+        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/workflow_generator_sub.py.old
+        size: 16281
+        timestamp: '2024-03-31 13:38:35.352515'
+        type: Transormations
+        version: 74e338455034544aef58c4d02c3c1b881dd7748246c0630307f5160d0b695b6a
+      workflow_round_1.yml:
+      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/08c37a10-3619-44f7-bf11-93cd12479aa8/outputs/workflow_round_1.yml
+        env:
+          CPU_Quota: Not Set
+          Container_Name: federated_learning_container.sif
+          Container_Type: Singularity
+          Current Directory: /srv
+          Machine: x86_64
+          Max_CPU_Limit: Not Set
+          Memory: 62.80 GB
+          Memory_Limit: Not Set
+          Node_Name: UCSD-worker-1
+          Number_of_Processes: 24
+          Processor: x86_64
+          Release: 5.4.0-167-generic
+          System: Linux
+          User: ''
+          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
+        gdrive_remote_storage_url: 1JEZF6adCkskzlixDuvZ1-czyLj5_xjzX
+        last_modification: 1711892454.6801841
+        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/0d9393bc09ba47c593488e70ebe9ffa7
+        path: /srv/workflow_round_1.yml
+        size: 30557
+        timestamp: '2024-03-31 13:41:12.506112'
+        type: outputs
+        version: c04e18074ef653b12e3092a01aa5fccc9afc18b905b884b21727bfa6185b7e75
     1cace53e-59f4-42b0-a50d-3f25c5536ff0:
       Model_performences_2.csv:
       - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/1cace53e-59f4-42b0-a50d-3f25c5536ff0/outputs/Model_performences_2.csv
@@ -6528,686 +7158,6 @@ workflow:
         timestamp: '2024-03-30 16:01:29.250515'
         type: workflow
         version: 9c5ad6d6d24ad7789006a7e0c22e2b823474f03633d7eb2ee820b0f402dc8b6c
-    b28ac158-aa71-417c-b2d3-6540e47d3c27:
-      Model_performences_1.csv:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/Model_performences_1.csv
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1fP6D6ji-OohRCcsh-QDer1XRQPK9GycD
-        last_modification: 1711892906.6776397
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/ff788c7817044e56a3fcf5ea6e10ae41
-        path: /srv/Model_performences_1.csv
-        size: 191
-        timestamp: '2024-03-31 13:49:05.546808'
-        type: outputs
-        version: b7eff98923323b7dcabad1ae5de9415b620935a7550aba815d58e1db152b6b93
-      cp:
-      - code_commit: a4f73c27bebb8254c10d81f642578d142511de32
-        git_url: https://github.com/swarmourr/PegasusGit/blob/a4f73c27bebb8254c10d81f642578d142511de32/cp
-        last_modification: 1711892495.8957872
-        path: /bin/cp
-        size: 153976
-        timestamp: '2024-03-31 13:42:17.596600'
-        type: Transormations
-        version: 40ea53f38efe555c09a2c1c860379190e2af94427daaa68756874154c3fa1188
-      evaluate_model.py:
-      - code_commit: 36ea35478a9ab925a5f7db03dfc0dc3bd57b53b7
-        git_url: https://github.com/swarmourr/PegasusGit/blob/36ea35478a9ab925a5f7db03dfc0dc3bd57b53b7/evaluate_model
-        last_modification: 1711892523.1319091
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/evaluate_model.py
-        size: 2177
-        timestamp: '2024-03-31 13:42:10.224227'
-        type: Transormations
-        version: 2838f450f8666ccccede2557e1a4b0a3e1f24b11018a0d0712a3ad639b71553a
-      global_model.py:
-      - code_commit: e488cca208b2d93b8a45deaa7fb4f778b2cca32c
-        git_url: https://github.com/swarmourr/PegasusGit/blob/e488cca208b2d93b8a45deaa7fb4f778b2cca32c/global_model
-        last_modification: 1711892523.1319091
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/global_model.py
-        size: 2347
-        timestamp: '2024-03-31 13:42:09.131426'
-        type: Transormations
-        version: b8e82f577100e475293c600c65d7634ec95d49cb4b9297db7ba27a234fe0c593
-      global_model_evaluation_1_1.csv:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/global_model_evaluation_1_1.csv
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1l4zSQhrCAvonNIcf-l86N066CCTSGhpN
-        last_modification: 1711892816.5972314
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/69e98ee97d9b41ebbd01b5b7198f2af5
-        path: /srv/global_model_evaluation_1_1.csv
-        size: 76
-        timestamp: '2024-03-31 13:47:42.938918'
-        type: outputs
-        version: 58ce5ba3eb0cf99e79d2ce9502d09cb88fb9467b9967409c47876d1c5ba72f1c
-      global_model_evaluation_6_1.csv:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/global_model_evaluation_6_1.csv
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1HRb49RO3_sFlWZiW6bTy2F8bQqYwib-j
-        last_modification: 1711892772.1930306
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/5107fb4fa00a40918deb7965e6d01c02
-        path: /srv/global_model_evaluation_6_1.csv
-        size: 77
-        timestamp: '2024-03-31 13:46:46.162206'
-        type: outputs
-        version: f000f4711fbdda566ac51e95ff3cfb732163b21b5dd79f13122ea41baaf9a34d
-      global_model_round_1.h5:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/global_model_round_1.h5
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1HdkTkPK-0M8ZI4Kfgq84xr-drnIKNEaH
-        last_modification: 1711892721.7328026
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/272708954be842648ad1c42688e5ef16
-        path: /srv/global_model_round_1.h5
-        size: 743784
-        timestamp: '2024-03-31 13:45:55.667342'
-        type: outputs
-        version: 7644900847b45ef98eac6030fe45702b2a597eee4ced67de40760abb6e04d96b
-      init_model.py:
-      - code_commit: 7cfae827885f4ac4cbdbefa789455293821fae5d
-        git_url: https://github.com/swarmourr/PegasusGit/blob/7cfae827885f4ac4cbdbefa789455293821fae5d/init_model
-        last_modification: 1711892523.1319091
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/init_model.py
-        size: 1330
-        timestamp: '2024-03-31 13:42:06.885913'
-        type: Transormations
-        version: 50cf4cabf99614e1dcf5efaccd11019d593db5ea5bde37d2d07226d5eddccf46
-      local_model.py:
-      - code_commit: 1cad56ea2f236b758e39be6190879d753e05323d
-        git_url: https://github.com/swarmourr/PegasusGit/blob/1cad56ea2f236b758e39be6190879d753e05323d/local_model
-        last_modification: 1711892495.823787
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/local_model.py
-        size: 2155
-        timestamp: '2024-03-31 13:42:08.013052'
-        type: Transormations
-        version: 2b0973c49bd96d11d4a0000536424ed7135793ada966dd4dfe799fc819e9e0d5
-      local_model_0_5999_round_1.h5:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/local_model_0_5999_round_1.h5
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1OkzQSEW7yzaqfntYiAHex4y2DmCVD0up
-        last_modification: 1711892630.796393
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/9f0a4408c8614870a77e78245c0959e6
-        path: /srv/local_model_0_5999_round_1.h5
-        size: 744816
-        timestamp: '2024-03-31 13:44:25.186331'
-        type: outputs
-        version: 78721db45f399f569c7261aed404c956f88046757d744a03ca0fe06fff8bab03
-      local_model_24000_29999_round_1.h5:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/local_model_24000_29999_round_1.h5
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1IJYSnT3UU7ChChP-FaNaPvOVNvRzUDtF
-        last_modification: 1711892551.3360357
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/4c9ecd0f6f1f4039a5cd0fefbab65d6a
-        path: /srv/local_model_24000_29999_round_1.h5
-        size: 744816
-        timestamp: '2024-03-31 13:43:11.768976'
-        type: outputs
-        version: 23990c62877205bcba607eb57eb22fd9b7b0a22b8236382dc9fb31ec69b5d464
-      pegasus_data_config.conf:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/pegasus_data_config.conf
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1lQPvU69HkidOXVqFPstxF2_BdY-9OOq1
-        last_modification: 1711892934.1737642
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/ff788c7817044e56a3fcf5ea6e10ae41
-        path: /home/poseidon/.pegasus/pegasus_data_config.conf
-        size: 529
-        timestamp: '2024-03-31 13:49:06.882631'
-        type: inputs
-        version: 0891ae564ebe9ca847174d281463b22b716abde9b8d3069d2de51b0124db48a9
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/pegasus_data_config.conf
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1fFZcSPvsKqVQY0M6z2isvFqAZeYwDKy7
-        last_modification: 1711893782.4854453
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/94cff629c0f441219e96461489d8c118
-        path: /home/poseidon/.pegasus/pegasus_data_config.conf
-        size: 529
-        timestamp: '2024-03-31 14:03:11.570037'
-        type: inputs
-        version: 0891ae564ebe9ca847174d281463b22b716abde9b8d3069d2de51b0124db48a9
-      pegasus_yaml_combiner.py:
-      - code_commit: 5c2e8b148fecca466b86de1ab4ffcd690d2ea8e1
-        git_url: https://github.com/swarmourr/PegasusGit/blob/5c2e8b148fecca466b86de1ab4ffcd690d2ea8e1/combiner
-        last_modification: 1711892495.8957872
-        path: /usr/local/lib/python3.8/dist-packages/Pegasus/api/Versionning/pegasus_yaml_combiner.py
-        size: 8243
-        timestamp: '2024-03-31 13:42:14.927780'
-        type: Transormations
-        version: 1ccc9239b37a69b96133169f8ddae143d9041095ca0b8d6d6e5bb0e3a3182c3c
-      perf_model.py:
-      - code_commit: a988b88257e09968d7e9d46ecc891048c1e125cb
-        git_url: https://github.com/swarmourr/PegasusGit/blob/a988b88257e09968d7e9d46ecc891048c1e125cb/perf_model
-        last_modification: 1711892495.791787
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/../bin/perf_model.py
-        size: 18055
-        timestamp: '2024-03-31 13:42:11.404964'
-        type: Transormations
-        version: 137f99bdbd6833d9b4d285bf996bee9bc340587e89f1076a256693809b54ceaa
-      replicas.yml:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/replicas.yml
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1fhLb-E45jXx4cDhh4oRTDNUMthK8jvzc
-        last_modification: 1711892906.74964
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/ff788c7817044e56a3fcf5ea6e10ae41
-        path: /srv/replicas.yml
-        size: 1041
-        timestamp: '2024-03-31 13:49:01.181463'
-        type: outputs
-        version: 58689d8afa4c0a822aa5e5be00b49d40927bb29df67e8e5076fc9b0d6802d9db
-      t10k-images-idx3-ubyte:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/t10k-images-idx3-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1GZKY8HEeI6THE11w3lBDmmd-bjaROSfD
-        last_modification: 1711892817.0732336
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/69e98ee97d9b41ebbd01b5b7198f2af5
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-images-idx3-ubyte
-        size: 7840016
-        timestamp: '2024-03-31 13:47:36.428442'
-        type: inputs
-        version: 0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/t10k-images-idx3-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1wH5CrQkmzUQ2lChrLGN_UgIZ7CuDo3Yx
-        last_modification: 1711892772.509032
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/5107fb4fa00a40918deb7965e6d01c02
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-images-idx3-ubyte
-        size: 7840016
-        timestamp: '2024-03-31 13:47:01.185430'
-        type: inputs
-        version: 0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/t10k-images-idx3-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1LdDwvJ_oOZrtxD6s1YDk2Y4bl5M9etrs
-        last_modification: 1711893755.641326
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/94cff629c0f441219e96461489d8c118
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-images-idx3-ubyte
-        size: 7840016
-        timestamp: '2024-03-31 14:03:34.786813'
-        type: inputs
-        version: 0fa7898d509279e482958e8ce81c8e77db3f2f8254e26661ceb7762c4d494ce7
-      t10k-labels-idx1-ubyte:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/t10k-labels-idx1-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1RYwfvayIY1FqaAIRSMMcNzfUNkI8jtww
-        last_modification: 1711892816.7932324
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/69e98ee97d9b41ebbd01b5b7198f2af5
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-labels-idx1-ubyte
-        size: 10008
-        timestamp: '2024-03-31 13:47:31.661815'
-        type: inputs
-        version: ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/t10k-labels-idx1-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1ONb5gfSnfvX_C7TCy659Q07t3lULjWSF
-        last_modification: 1711892772.225031
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/5107fb4fa00a40918deb7965e6d01c02
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-labels-idx1-ubyte
-        size: 10008
-        timestamp: '2024-03-31 13:46:47.091687'
-        type: inputs
-        version: ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/t10k-labels-idx1-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1EecWI_8pr9VLmDz9L9Uv7gHcPx1wRT20
-        last_modification: 1711893754.697322
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/94cff629c0f441219e96461489d8c118
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/t10k-labels-idx1-ubyte
-        size: 10008
-        timestamp: '2024-03-31 14:03:15.956331'
-        type: inputs
-        version: ff7bcfd416de33731a308c3f266cc351222c34898ecbeaf847f06e48f7ec33f2
-      train-images-idx3-ubyte:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/train-images-idx3-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1IPRuxlAlv9ANcqK1zHoBd4oycIOpveoo
-        last_modification: 1711892631.536396
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/9f0a4408c8614870a77e78245c0959e6
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-images-idx3-ubyte
-        size: 47040016
-        timestamp: '2024-03-31 13:44:26.660842'
-        type: inputs
-        version: ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/train-images-idx3-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1XttGC7QQDsogzlAlyhlL88gYGwV_yOA9
-        last_modification: 1711892552.1400392
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/4c9ecd0f6f1f4039a5cd0fefbab65d6a
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-images-idx3-ubyte
-        size: 47040016
-        timestamp: '2024-03-31 13:43:07.957514'
-        type: inputs
-        version: ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/train-images-idx3-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1eq2ABEUUdBtQInhD7aP6dT5GjdlNZdh6
-        last_modification: 1711893755.5373256
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/94cff629c0f441219e96461489d8c118
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-images-idx3-ubyte
-        size: 47040016
-        timestamp: '2024-03-31 14:03:44.312390'
-        type: inputs
-        version: ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db
-      train-labels-idx1-ubyte:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/train-labels-idx1-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1ysdNDrQSoX_p4F724mfx-XyV0H-hb8CL
-        last_modification: 1711892630.656392
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/9f0a4408c8614870a77e78245c0959e6
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-labels-idx1-ubyte
-        size: 60008
-        timestamp: '2024-03-31 13:44:31.535113'
-        type: inputs
-        version: 65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/train-labels-idx1-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1QPmGvVrheep1c7CXTNYmkutchINsjjXQ
-        last_modification: 1711892551.2640355
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/4c9ecd0f6f1f4039a5cd0fefbab65d6a
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-labels-idx1-ubyte
-        size: 60008
-        timestamp: '2024-03-31 13:43:12.168194'
-        type: inputs
-        version: 65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/inputs/train-labels-idx1-ubyte
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 14XYKWJ4F6B-036DTFfSk_2_ZKx799wqe
-        last_modification: 1711893754.6613216
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/94cff629c0f441219e96461489d8c118
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/mnist/train-labels-idx1-ubyte
-        size: 60008
-        timestamp: '2024-03-31 14:03:28.267965'
-        type: inputs
-        version: 65a50cbbf4e906d70832878ad85ccda5333a97f0f4c3dd2ef09a8a9eef7101c5
-      transformationVersioning.py:
-      - code_commit: e5b219eba0c62f173585d3d5a2edf864893679c6
-        git_url: https://github.com/swarmourr/PegasusGit/blob/e5b219eba0c62f173585d3d5a2edf864893679c6/version_transformations
-        last_modification: 1711892495.823787
-        path: /usr/local/lib/python3.8/dist-packages/Pegasus/api/Versionning/transformationVersioning.py
-        size: 10996
-        timestamp: '2024-03-31 13:42:16.151345'
-        type: Transormations
-        version: 867e4f5109f36f17f6a5ec49942b371fd8219759e4ba8920b9055970757d9c25
-      versiondata.py:
-      - code_commit: 918617c06451faa5972b0dbb328fd326822a29ac
-        git_url: https://github.com/swarmourr/PegasusGit/blob/918617c06451faa5972b0dbb328fd326822a29ac/data_tracker
-        last_modification: 1711892495.823787
-        path: /usr/local/lib/python3.8/dist-packages/Pegasus/api/Versionning/versiondata.py
-        size: 24859
-        timestamp: '2024-03-31 13:42:13.812182'
-        type: Transormations
-        version: ac7d6dacad00a1d4d2529c798d1395c4f042f5b928a459205fbcffec4525daa5
-      workflow_generator_sub.py.old:
-      - code_commit: 1c5680218340cfa11fd7e09cd0420c25b5c1ee59
-        git_url: https://github.com/swarmourr/PegasusGit/blob/1c5680218340cfa11fd7e09cd0420c25b5c1ee59/build_local_workflow
-        last_modification: 1711892495.823787
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/workflow_generator_sub.py.old
-        size: 16281
-        timestamp: '2024-03-31 13:42:12.592207'
-        type: Transormations
-        version: 74e338455034544aef58c4d02c3c1b881dd7748246c0630307f5160d0b695b6a
-      workflow_round_1.yml:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/workflow/wf
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: UCSD-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1kpPAV91jIifSMdpeEfvsW9MUgH8yJ6KQ
-        last_modification: 1711892501.3921402
-        mlflow_url: This jobs is not tracked by MLFLOW
-        path: /home/poseidon/FL-workflow/multirounds-FL/federated-learning-score/Main_workflow/output/workflow_round_1.yml
-        size: 130
-        timestamp: '2024-03-31 13:41:49.521480'
-        type: workflow
-        version: 4150d674561d6ed905cf8c33b045449070450702c2b2e6f314f7f34a179001db
-      workflow_round_2.yml:
-      - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/b28ac158-aa71-417c-b2d3-6540e47d3c27/outputs/workflow_round_2.yml
-        env:
-          CPU_Quota: Not Set
-          Container_Name: federated_learning_container.sif
-          Container_Type: Singularity
-          Current Directory: /srv
-          Machine: x86_64
-          Max_CPU_Limit: Not Set
-          Memory: 62.80 GB
-          Memory_Limit: Not Set
-          Node_Name: DALL-worker-1
-          Number_of_Processes: 24
-          Processor: x86_64
-          Release: 5.4.0-167-generic
-          System: Linux
-          User: ''
-          Version: '#184-Ubuntu SMP Tue Oct 31 09:21:49 UTC 2023'
-        gdrive_remote_storage_url: 1CbP2z-YlbixyEjwioArO3_eqU07-jSH4
-        last_modification: 1711892906.74964
-        mlflow_url: https://dagshub.com/swarmourr/FL-WF.mlflow/#/experiments/8/runs/ff788c7817044e56a3fcf5ea6e10ae41
-        path: /srv/workflow_round_2.yml
-        size: 30596
-        timestamp: '2024-03-31 13:49:09.883217'
-        type: outputs
-        version: 63704fcde1ca66d43aafde1fe305e3ddcd5c68e0129dc1c5d0ad7ab80c0c0369
     ca6a3760-09a7-481c-b867-dcc54c8e16ef:
       Model_performences_0.csv:
       - bucket_storage_url: pegasus@osn/asc190064-bucket01/federated-learning/federated-learning-example/ca6a3760-09a7-481c-b867-dcc54c8e16ef/outputs/Model_performences_0.csv
