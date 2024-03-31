@@ -100,10 +100,9 @@ class GitHubFilePusher:
 
         if response.status_code == 200:
             # Decode the content from base64
-            #content_base64 = response.json()["content"]
-            #file_content = base64.b64decode(content_base64).decode("utf-8")
-            file_content = requests.get(response.json()["download_url"])
-            return file_content.text
+            content_base64 = response.json()["content"]
+            file_content = base64.b64decode(content_base64).decode("utf-8")
+            return file_content
         else:
             print(f"Failed to pull file '{file_path}': {response.text}")
             return None
@@ -175,7 +174,7 @@ if __name__ == '__main__':
 
     parser.add_argument("-files", default=None, type=str, nargs='+' , help="Files to track")
     parser.add_argument("-file_type", default="yaml", help="Files to track")
-    parser.add_argument("-output_file_name", default="metadata", help="Files to track")
+    parser.add_argument("-output_file_name", default=None, help="Files to track")
 
     # git configuration
     parser.add_argument("--use-git", action="store_true", help="Use git repo configuration")
